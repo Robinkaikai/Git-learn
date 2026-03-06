@@ -4,6 +4,9 @@ class Person(object):
         self.element = element
         self.sex = sex
 
+    def __str__(self):
+        return 'Person object is %s , element is %s' %(self.name,self.element)
+
     def IfLike(self):
         if self.sex == "Male":
             print("No!Get out!")
@@ -17,3 +20,5 @@ class Person(object):
 Yae = Person("Yae Miko",'electro',"Female")
 Yae.IfLike()
 Yae.PrintPerson()
+
+print(Person("Yae Miko",'electro',"Female"))
